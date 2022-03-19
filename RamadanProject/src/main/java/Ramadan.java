@@ -7,5 +7,9 @@ public class Ramadan {
 
 
         //I am hungry
+        // comment new
+        //"
+
+        System.out.println("me");
     }
 }
