@@ -1,4 +1,12 @@
 public class IgnoreFile {
 
-    int num = 0;
+    public static void main(String[] args) {
+
+        int num = 0;
+
+
+    }
+
+
+
 }
