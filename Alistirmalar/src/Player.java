@@ -2,31 +2,38 @@ import java.util.Scanner;
 
 public class Player {
 
-
     String name;
-    double height;
     String teamName;
-    private double salary;
+    double height;
+    int age;
     int score;
 
-    public Player(String name, double height, String teamName) {
+    private double salary;
+    Scanner scanner = new Scanner(System.in);
 
+
+    public Player(String name, String teamName, double height, int age) {
         this.name = name;
         this.height = height;
+        this.age = age;
         this.teamName = teamName;
     }
 
-
     public void setSalary(double salary) {
         this.salary = salary;
+
     }
 
     public double getSalary() {
+
         return salary;
     }
 
 
-    public void gameStart() {
+/*
+
+
+public void gameStart() {
         System.out.println("Game Starts and " + name + " gets the ball " +
 
                 name + " shoots and yes buckets! " + teamName + " added 2 point");
@@ -78,4 +85,6 @@ public class Player {
 
 
     }
+
+ */
 }
