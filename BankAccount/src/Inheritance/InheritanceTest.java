@@ -8,5 +8,6 @@ public class InheritanceTest extends AccessModifiers {
 
         System.out.println(AccessModifiers.publicData);
         System.out.println(AccessModifiers.protectedData); // visible in the same packacge and child class
+
     }
 }
