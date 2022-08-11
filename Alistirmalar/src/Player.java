@@ -25,7 +25,6 @@ public class Player {
     }
 
     public double getSalary() {
-
         return salary;
     }
 

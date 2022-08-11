@@ -1,11 +1,12 @@
 public class Moves extends Player {
 
+
     public Moves(String name, String teamName, double height, int age) {
         super(name, teamName, height, age);
 
     }
 
-    public void gameStart(String name) {
+    public void gameStart(String name, String teamName) {
         this.name = name;
         this.teamName = teamName;
 
@@ -17,8 +18,9 @@ public class Moves extends Player {
 
     }
 
-    public void steal() {
-        System.out.println(name + " steals the ball");
+    public void steal(String name, String teamName) {
+
+        System.out.println(name + " steals the ball for " + teamName);
     }
 
 
