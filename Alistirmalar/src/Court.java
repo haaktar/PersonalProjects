@@ -15,32 +15,38 @@ public class Court {
 
         switch (selection) {
 
-                case 1:
-                    System.out.println("Efes Starts");
-                    break;
-                case 2:
-                    System.out.println("Real Starts");
-                    break;
+            case 1:
+                System.out.println("Efes Starts");
+                break;
+            case 2:
+                System.out.println("Real Starts");
+                break;
 
-                default:
-                    System.out.println("Wrong Selection");
-
-            }
-
-            System.out.println("Please select a move:  ");
-            System.out.println("1- Shot, 2-Steal");
-
-            switch (selection) {
-                case 1:
-                    moves.gameStart("Micic", "Anadolu Efes Istanbul");
-                    break;
-                case 2:
-                    moves.steal("Fernandez", "Real Madrid");
-
-
-            }
-
-
+            default:
+                throw new RuntimeException("Wrong Selection");
         }
 
+
+        int secondSelection = scanner.nextInt();
+
+
+        System.out.println("Please select a move:  ");
+        System.out.println("1- Shot, 2-Steal");
+
+
+        switch (secondSelection) {
+            case 1:
+                moves.gameStart("Micic", "Anadolu Efes Istanbul");
+                break;
+            case 2:
+                moves.gameStart("Fernandez", "Real Madrid");
+                break;
+
+            default:
+                throw new RuntimeException("Wrong Selection");
+        }
+
+
     }
+
+}
