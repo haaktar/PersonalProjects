@@ -10,29 +10,39 @@ public class Court {
         System.out.println("Please select a team to start ");
         System.out.println("1- Anadolu Efes, 2- Real Madrid");
 
-        int selection = scanner.nextInt();
+
+        boolean loopRepeat = true;
+
+        while (loopRepeat) {
+            int selection = scanner.nextInt();
 
 
-        switch (selection) {
 
-            case 1:
-                System.out.println("Efes Starts");
-                break;
-            case 2:
-                System.out.println("Real Starts");
-                break;
+            switch (selection) {
 
-            default:
-                throw new RuntimeException("Wrong Selection");
-        }
+                case 1:
+                    System.out.println("Efes Starts");
+                    break;
+                case 2:
+                    System.out.println("Real Starts");
+                    break;
 
-        if (selection == 1) {
+                default:
+                    throw new RuntimeException("Wrong Selection");
+            }
 
-            moves.gameStart("Larkin", "Anadolu Efes Istanbul");
-        } else if(selection == 2) {
-            moves.gameStart("Fernandez", "Real Madrid");
-            moves.playerValue("Fernadez", 6.3);
+            if (selection == 1) {
 
+                moves.gameStart("Larkin", "Anadolu Efes Istanbul");
+                moves.homeTeamScore();
+                moves.gameScore();
+            } else if (selection == 2) {
+                moves.gameStart("Fernandez", "Real Madrid");
+                moves.playerHeight("Fernadez", 6.3);
+                moves.awayTeamScore();
+                moves.gameScore();
+
+            }
         }
 
 /*

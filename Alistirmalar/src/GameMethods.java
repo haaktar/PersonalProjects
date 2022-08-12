@@ -1,18 +1,20 @@
-import java.util.Scanner;
-
-public class Player {
+public class GameMethods {
 
     String name;
     String teamName;
     double height;
     int age;
-    int score;
+    static int twoPoint = 2;
+    int homeTeamScore;
+    int awayTeamScore;
+    static String efes = " Anadolu Efes ";
+    static String real = " Real Madrid ";
 
     private double salary;
-    Scanner scanner = new Scanner(System.in);
+    // Scanner scanner = new Scanner(System.in);
 
 
-    public Player(String name, String teamName, double height, int age) {
+    public GameMethods(String name, String teamName, double height, int age) {
         this.name = name;
         this.height = height;
         this.age = age;
@@ -27,6 +29,39 @@ public class Player {
     public double getSalary() {
         return salary;
     }
+
+    public void homeTeamScore() {
+
+        homeTeamScore += twoPoint;
+
+        System.out.println(homeTeamScore);
+
+    }
+
+    public void awayTeamScore() {
+
+        awayTeamScore += twoPoint;
+
+        System.out.println(awayTeamScore);
+
+
+    }
+
+    public void gameScore() {
+
+        System.out.println("Anadolu Efes Istanbul : " + homeTeamScore + " Real Madrid " + awayTeamScore);
+
+        if (homeTeamScore >= 58) {
+            System.out.println(" @@@@@@@@@@ Champion is @@@@@@@@@@ " + efes);
+            System.exit(0);
+
+        } else if (awayTeamScore >= 58) {
+            System.out.println(" @@@@@@@@@@ Champion is @@@@@@@@@@ " + real);
+            System.exit(0);
+
+
+
+        }
 
 
 /*
@@ -86,4 +121,5 @@ public void gameStart() {
     }
 
  */
+    }
 }

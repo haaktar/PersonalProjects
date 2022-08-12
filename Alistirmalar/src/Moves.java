@@ -1,4 +1,4 @@
-public class Moves extends Player {
+public class Moves extends GameMethods {
 
 
     public Moves(String name, String teamName, double height, int age) {
@@ -32,6 +32,6 @@ public class Moves extends Player {
 
     @Override
     public String toString() {
-        return "Moves{" + "name='" + name + '\'' + ", teamName='" + teamName + '\'' + ", height=" + height + ", age=" + age + ", score=" + score + '}';
+        return "Moves{" + "name='" + name + '\'' + ", teamName='" + teamName + '\'' + ", height=" + height + ", age=" + age + ", score=" + twoPoint + '}';
     }
 }
