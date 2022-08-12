@@ -23,6 +23,12 @@ public class Moves extends Player {
         System.out.println(name + " steals the ball for " + teamName);
     }
 
+    public void playerHeight(String name, double height) {
+
+
+        System.out.println(name + "'s height is " + height + " and he gets the points ");
+    }
+
 
     @Override
     public String toString() {

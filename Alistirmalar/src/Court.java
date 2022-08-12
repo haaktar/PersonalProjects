@@ -26,7 +26,16 @@ public class Court {
                 throw new RuntimeException("Wrong Selection");
         }
 
+        if (selection == 1) {
 
+            moves.gameStart("Larkin", "Anadolu Efes Istanbul");
+        } else if(selection == 2) {
+            moves.gameStart("Fernandez", "Real Madrid");
+            moves.playerValue("Fernadez", 6.3);
+
+        }
+
+/*
         int secondSelection = scanner.nextInt();
 
 
@@ -40,11 +49,16 @@ public class Court {
                 break;
             case 2:
                 moves.gameStart("Fernandez", "Real Madrid");
+                moves.playerValue("Fernadez", 6.3);
                 break;
 
             default:
-                throw new RuntimeException("Wrong Selection");
+                System.out.println("Wrong Selection");
+
+
         }
+
+ */
 
 
     }
