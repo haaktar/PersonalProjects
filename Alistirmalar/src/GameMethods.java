@@ -7,8 +7,8 @@ public class GameMethods {
     static int twoPoint = 2;
     int homeTeamScore;
     int awayTeamScore;
-    static String efes = " Anadolu Efes ";
-    static String real = " Real Madrid ";
+    public String efes = " Anadolu Efes ";
+    public String real = " Real Madrid ";
 
     private double salary;
     // Scanner scanner = new Scanner(System.in);
@@ -31,34 +31,31 @@ public class GameMethods {
     }
 
     public void homeTeamScore() {
-
         homeTeamScore += twoPoint;
 
-        System.out.println(homeTeamScore);
+        System.out.println(efes + " score " + homeTeamScore);
 
     }
 
     public void awayTeamScore() {
-
         awayTeamScore += twoPoint;
 
-        System.out.println(awayTeamScore);
+        System.out.println(real + " score" +  awayTeamScore);
 
 
     }
 
     public void gameScore() {
 
-        System.out.println("Anadolu Efes Istanbul : " + homeTeamScore + " Real Madrid " + awayTeamScore);
+        System.out.println(efes + " " + homeTeamScore + real + " " + awayTeamScore);
 
-        if (homeTeamScore >= 58) {
+        if (homeTeamScore >= 6) {
             System.out.println(" @@@@@@@@@@ Champion is @@@@@@@@@@ " + efes);
             System.exit(0);
 
-        } else if (awayTeamScore >= 58) {
+        } else if (awayTeamScore >= 6) {
             System.out.println(" @@@@@@@@@@ Champion is @@@@@@@@@@ " + real);
             System.exit(0);
-
 
 
         }
@@ -121,5 +118,10 @@ public void gameStart() {
     }
 
  */
+    }
+
+    public void timeOut(){
+
+        System.out.println(teamName + " taking timeout");
     }
 }

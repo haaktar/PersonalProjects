@@ -29,6 +29,50 @@ public class Moves extends GameMethods {
         System.out.println(name + "'s height is " + height + " and he gets the points ");
     }
 
+    public void homeTeamScore() {
+        homeTeamScore += twoPoint;
+
+       // System.out.println(homeTeamScore);
+
+    }
+
+    public void awayTeamScore() {
+        awayTeamScore += twoPoint;
+
+       // System.out.println(awayTeamScore);
+
+
+    }
+
+    public void gameScore() {
+
+        System.out.println("Anadolu Efes Istanbul : " + homeTeamScore + " Real Madrid " + awayTeamScore);
+
+        if (homeTeamScore >= 6) {
+            System.out.println(" @@@@@@@@@@ Champion is @@@@@@@@@@ " + efes);
+            System.exit(0);
+
+
+
+        } else if (awayTeamScore >= 6) {
+            System.out.println(" @@@@@@@@@@ Champion is @@@@@@@@@@ " + real);
+            System.exit(0);
+
+
+
+
+        }
+
+
+    }
+
+    public void timeOut(){
+
+        System.out.println(teamName + " taking timeout");
+    }
+
+
+
 
     @Override
     public String toString() {
