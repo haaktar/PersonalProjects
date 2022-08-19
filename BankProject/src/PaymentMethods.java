@@ -49,6 +49,11 @@ public class PaymentMethods extends Customer {
                 ++errorNumber;
 
                 System.err.println("Wrong Username or Password");
+                try {
+                    Thread.sleep(2000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 System.out.println("Please Enter Your Username");
                 System.out.print("Username : ");
                 String userNameScanner2 = scanner.next();
