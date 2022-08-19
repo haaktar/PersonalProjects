@@ -1,2 +1,11 @@
-package PACKAGE_NAME;public class Dog {
+public class Dog extends Animals {
+
+    public void fly() {
+
+    }
+
+    private void country() {
+
+    }
+
 }

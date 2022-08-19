@@ -1,5 +1,5 @@
 package Interface.AnimalTask;
 
-public interface Playable {
+  interface Playable {
     public abstract void playable();
 }

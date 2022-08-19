@@ -5,6 +5,7 @@ public class PaymentMethods extends Customer {
     double balance;
     String username = "hakan";
     String userPassword = "123";
+    int errorNumber = 0;
 
 
     public PaymentMethods(String name, String lastName) {
@@ -17,9 +18,10 @@ public class PaymentMethods extends Customer {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
         String formatDateTime = now.format(formatter);
 
+        System.out.println("=========================");
         System.out.println("** Welcome to Citizens Bank **");
-        // System.out.println();
-        System.out.println(formatDateTime);
+        System.out.println("    " + formatDateTime);
+        System.out.println("=========================");
         System.out.println();
 
     }
@@ -27,34 +29,44 @@ public class PaymentMethods extends Customer {
     public void loginScreen() {
 
         System.out.println("Please Enter Your Username");
-        System.out.println("Username : ");
+        System.out.print("Username : ");
         String userNameScanner = scanner.next();
         System.out.println("Please Enter Your Password");
-        System.out.println("Password: ");
+        System.out.print("Password: ");
         String userPasswordScanner = scanner.next();
 
         if ((username.equalsIgnoreCase(userNameScanner)) && (userPassword.equalsIgnoreCase(userPasswordScanner))) {
 
-            System.out.println("Log in Successful");
+            System.out.println();
+            System.out.println("=========================");
+            System.out.println("*** Log in Successful ***");
+            System.out.println("=========================");
 
 
         } else {
 
             for (; ; ) {
+                ++errorNumber;
+
                 System.err.println("Wrong Username or Password");
                 System.out.println("Please Enter Your Username");
-                System.out.println("Username : ");
+                System.out.print("Username : ");
                 String userNameScanner2 = scanner.next();
                 System.out.println("Please Enter Your Password");
-                System.out.println("Password: ");
+                System.out.print("Password: ");
                 String userPasswordScanner2 = scanner.next();
+                if (errorNumber == 2) {
+                    System.err.println("Session is Terminated");
+                    System.exit(0);
+                }
 
                 if ((username.equalsIgnoreCase(userNameScanner2)) && (userPassword.equalsIgnoreCase(userPasswordScanner2))) {
+                    System.out.println();
+                    System.out.println("=========================");
+                    System.out.println("*** Log in Successful ***");
+                    System.out.println("=========================");
 
-                    System.out.println("Log in Successful");
-
-                    System.exit(0);
-
+                    return;
                 }
 
             }

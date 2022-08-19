@@ -12,6 +12,7 @@ public abstract class Customer {
     public double balance;
     LocalDateTime now = LocalDateTime.now();
     Scanner scanner = new Scanner(System.in);
+    int errorNumber;
 
 
     public abstract void depositMoney(double deposit);
