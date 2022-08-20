@@ -1,4 +1,4 @@
-package Interface.Phone;
+package Polymorphism.Phone;
 
 public interface Downloadable {
 
