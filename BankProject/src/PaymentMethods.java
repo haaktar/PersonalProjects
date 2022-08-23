@@ -3,14 +3,21 @@ import java.time.format.DateTimeFormatter;
 public class PaymentMethods extends Customer {
 
     double balance;
-    String username = "hakan";
+    String username = "Hakan";
     String userPassword = "123";
-    int errorNumber = 0;
+    // int errorNumber = 0;
 
 
     public PaymentMethods(String name, String lastName) {
 
+    }
 
+    public void sleep() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -41,6 +48,31 @@ public class PaymentMethods extends Customer {
             System.out.println("=========================");
             System.out.println("*** Log in Successful ***");
             System.out.println("=========================");
+            sleep();
+            System.out.println();
+            System.out.println("=========================");
+            System.out.println("*** Account Is Loading ***");
+            System.out.println("=========================");
+            System.out.println();
+            System.out.print("*");
+            sleep();
+            System.out.print("*");
+            sleep();
+            System.out.print("*");
+            sleep();
+            System.out.print("*");
+
+            System.out.println();
+
+            sleep();
+/*
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+ */
 
 
         } else {
@@ -50,7 +82,7 @@ public class PaymentMethods extends Customer {
 
                 System.err.println("Wrong Username or Password");
                 try {
-                    Thread.sleep(2000);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -71,9 +103,44 @@ public class PaymentMethods extends Customer {
                     System.out.println("*** Log in Successful ***");
                     System.out.println("=========================");
 
+                    try {
+                        Thread.sleep(2000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+
                     return;
                 }
 
+            }
+        }
+    }
+
+    @Override
+    public void menuScreen() {
+
+        for (; ; ) {
+
+
+            System.out.println();
+            System.out.println(username + " Please Select an Option");
+            System.out.println();
+            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money");
+
+            int menuScanner = scanner.nextInt();
+
+            if (menuScanner == 1) {
+
+                System.out.println("Please Enter the Dollar Amount");
+
+                double dollarScanner = scanner.nextDouble();
+
+                depositMoney(dollarScanner);
+
+            } else if (menuScanner == 2) {
+                System.out.println("2 selected");
+            } else if (menuScanner == 3) {
+                return;
             }
         }
     }

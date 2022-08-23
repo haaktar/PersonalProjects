@@ -5,12 +5,10 @@ public class PaymentTransactionsObjects {
 
         paymentObjects.welcomeScreen();
         paymentObjects.loginScreen();
-        paymentObjects.depositMoney(350);
-        paymentObjects.withdrawMoney(1000);
-        paymentObjects.depositMoney(350);
+       paymentObjects.menuScreen();
 
 
-        System.out.println(paymentObjects);
+       System.out.println(paymentObjects);
 
 
     }

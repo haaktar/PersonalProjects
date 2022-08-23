@@ -13,6 +13,7 @@ public abstract class Customer {
     LocalDateTime now = LocalDateTime.now();
     Scanner scanner = new Scanner(System.in);
     int errorNumber;
+    double moneyAmount;
 
 
     public abstract void depositMoney(double deposit);
@@ -20,6 +21,8 @@ public abstract class Customer {
     public abstract void withdrawMoney(double withdraw);
 
     public abstract void transferMoney(double withdraw, double deposit);
+
+    public  abstract void menuScreen();
 
     public void welcomeScreen() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
