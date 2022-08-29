@@ -4,6 +4,7 @@ public class Zoo {
 
     public static void main(String[] args) {
 
+
         Dog dog1 = new Dog("Joay", 3, 'F');
         Animal dog2 = new Dog("Katil",4,'M');
 
@@ -15,5 +16,10 @@ public class Zoo {
 
         dog2.eat();
         dog2.sleep();
+
+
+
+
+
     }
 }

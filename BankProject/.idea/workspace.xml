@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b4b039-11d3-43cf-ad0a-aee2303031f4" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/../BankAccount/src/Polymorphism/AninalTask/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankAccount/src/Polymorphism/AninalTask/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankAccount/src/Polymorphism/AninalTask/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankAccount/src/Polymorphism/AninalTask/TypeCasting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BankAccount/src/Polymorphism/AninalTask/Zoo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/out/production/BankAccount/Interface/Phone/AndroidApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/out/production/BankAccount/Interface/Phone/AppleApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/out/production/BankAccount/Interface/Phone/Downloadable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/out/production/BankAccount/Interface/Phone/IPhone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/out/production/BankAccount/Interface/Phone/IPhoneObjects.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/out/production/BankAccount/Interface/Phone/Phone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/out/production/BankAccount/Interface/Phone/Samsung.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/src/Abstraction/CarTask/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankAccount/src/Abstraction/CarTask/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BankAccount/src/Interface/AnimalTask/Flyable.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BankAccount/src/Interface/AnimalTask/Flyable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankProject/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankProject/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankProject/PaymentMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankProject/PaymentMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankProject/PaymentTransactionsObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BankProject/PaymentTransactionsObjects.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PaymentMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PaymentTransactionsObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentTransactionsObjects.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
