@@ -2,6 +2,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+
 public abstract class Customer {
 
 
@@ -37,13 +38,9 @@ public abstract class Customer {
         System.out.println("Please Enter Your Password");
 
     }
-/*
-    public Customer(String name, String lastName) {
+public void currentBalance(){
 
-        this.name = name;
-        this.lastName = lastName;
-    }
-
- */
+    System.out.println( " Current Balance is " + balance);
+}
 
 }

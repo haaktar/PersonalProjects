@@ -125,7 +125,7 @@ public class PaymentMethods extends Customer {
             System.out.println();
             System.out.println(username + " Please Select an Option");
             System.out.println();
-            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money " + " 3 - Zelle " + " 4 - Exit");
+            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money " + " 3 - Zelle " + " 4- Balance " +  "5 - Exit");
 
             int menuScanner = scanner.nextInt();
 
@@ -139,13 +139,19 @@ public class PaymentMethods extends Customer {
 
             } else if (menuScanner == 2) {
                 System.out.println("2 selected");
+
+                System.out.println("Please Enter the Dollar Amount");
+
+                double withdrawScanner = scanner.nextDouble();
+                withdrawMoney(withdrawScanner);
+
             } else if (menuScanner == 3) {
 
-                double depositScanner = scanner.nextDouble();
-                withdrawMoney(depositScanner);
+            }else if (menuScanner == 4){
 
+                currentBalance();
 
-            } else if (menuScanner == 4) {
+            } else if (menuScanner == 5) {
                 return;
             }
         }
@@ -161,7 +167,7 @@ public class PaymentMethods extends Customer {
             throw new RuntimeException("Amount must be above $0 ");
         }
 
-        System.out.println(" New balance is " + balance);
+        System.out.println("New balance is " + balance);
 
     }
 
@@ -173,7 +179,10 @@ public class PaymentMethods extends Customer {
 
         if (balance < withdraw) {
             System.out.println("Withdraw  amount is  less then balance");
-            System.exit(0);
+            // System.exit(0);
+        }else {
+            System.out.println("New balance is " + balance);
+
         }
 
     }
@@ -183,6 +192,12 @@ public class PaymentMethods extends Customer {
         this.deposit = deposit;
         this.withdraw = withdraw;
 
+    }
+
+
+    public void currentBalance(){
+
+        System.out.println( " Current Balance is " + balance);
 
     }
 
