@@ -14,7 +14,8 @@ public abstract class Customer implements TransferMoney {
     LocalDateTime now = LocalDateTime.now();
     Scanner scanner = new Scanner(System.in);
     int errorNumber;
-    double moneyAmount;
+    String username = "Hakan";
+    String userPassword = "123";
 
 
     public abstract void depositMoney(double deposit);
@@ -25,6 +26,11 @@ public abstract class Customer implements TransferMoney {
 
     public abstract void menuScreen();
 
+    public abstract void welcomeScreen();
+
+    public abstract void loanRequest();
+
+    /*
     public void welcomeScreen() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
         String formatDateTime = now.format(formatter);
@@ -38,6 +44,8 @@ public abstract class Customer implements TransferMoney {
         System.out.println("Please Enter Your Password");
 
     }
+
+     */
 
     public void currentBalance() {
 
@@ -56,4 +64,6 @@ public abstract class Customer implements TransferMoney {
         }
 // toString
     }
+
+
 }

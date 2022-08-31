@@ -10,7 +10,6 @@ public class PaymentTransactionsObjects {
 
 
 
-        System.out.println(paymentObjects);
 
 
     }

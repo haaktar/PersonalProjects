@@ -3,9 +3,10 @@ import java.time.format.DateTimeFormatter;
 public class PaymentMethods extends Customer {
 
     double balance;
-    String username = "Hakan";
-    String userPassword = "123";
+    // String username = "Hakan";
+    //String userPassword = "123";
     // int errorNumber = 0;
+    int creditScore;
 
 
     public PaymentMethods(String name, String lastName) {
@@ -125,7 +126,7 @@ public class PaymentMethods extends Customer {
             System.out.println();
             System.out.println(username + " Please Select an Option");
             System.out.println();
-            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money " + " 3 - Zelle " + " 4- Balance " + "5 - Exit");
+            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money " + " 3 - Utility Payments " + " 4- Balance " + "5 - Exit" + " 6 - Loan");
 
             int menuScanner = scanner.nextInt();
 
@@ -160,7 +161,12 @@ public class PaymentMethods extends Customer {
                 currentBalance();
 
             } else if (menuScanner == 5) {
+
+                System.out.println("");
+                System.err.println("Successfully Logged Out");
                 return;
+
+
             }
         }
     }
@@ -224,8 +230,5 @@ public class PaymentMethods extends Customer {
         }
     }
 
-    @Override
-    public String toString() {
-        return "PaymentMethods{" + "name='" + name + '\'' + ", lastName='" + lastName + '\'' + ", deposit=" + deposit + ", withdraw=" + withdraw + ", balance=" + balance + '}';
-    }
+
 }
