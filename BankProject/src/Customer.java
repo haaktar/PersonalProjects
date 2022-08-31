@@ -3,7 +3,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 
-public abstract class Customer {
+public abstract class Customer implements TransferMoney {
 
 
     public String name;
@@ -23,7 +23,7 @@ public abstract class Customer {
 
     public abstract void transferMoney(double withdraw, double deposit);
 
-    public  abstract void menuScreen();
+    public abstract void menuScreen();
 
     public void welcomeScreen() {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss");
@@ -38,9 +38,22 @@ public abstract class Customer {
         System.out.println("Please Enter Your Password");
 
     }
-public void currentBalance(){
 
-    System.out.println( " Current Balance is " + balance);
-}
+    public void currentBalance() {
 
+        System.out.println(" Current Balance is " + balance);
+    }
+
+    public void gas(double gasWithdraw) {
+        balance -= gasWithdraw;
+
+        if (balance < gasWithdraw) {
+            System.out.println("Transfer  amount is  less then balance");
+            // System.exit(0);
+        } else {
+            System.out.println("New balance is " + balance);
+
+        }
+// toString
+    }
 }

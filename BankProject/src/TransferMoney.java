@@ -1,4 +1,4 @@
-public interface TransferMoney {
+public abstract interface TransferMoney {
 
-    public void gas();
+    public void gas(double gasWithdraw);
 }

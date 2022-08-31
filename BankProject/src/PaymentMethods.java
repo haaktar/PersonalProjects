@@ -125,7 +125,7 @@ public class PaymentMethods extends Customer {
             System.out.println();
             System.out.println(username + " Please Select an Option");
             System.out.println();
-            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money " + " 3 - Zelle " + " 4- Balance " +  "5 - Exit");
+            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money " + " 3 - Zelle " + " 4- Balance " + "5 - Exit");
 
             int menuScanner = scanner.nextInt();
 
@@ -147,7 +147,15 @@ public class PaymentMethods extends Customer {
 
             } else if (menuScanner == 3) {
 
-            }else if (menuScanner == 4){
+                System.out.println("3 selected");
+
+                System.out.println("Please Enter the Dollar Amount You Want To Transfer To National Fuel");
+
+                double gasScanner = scanner.nextDouble();
+
+                gas(gasScanner);
+
+            } else if (menuScanner == 4) {
 
                 currentBalance();
 
@@ -180,7 +188,7 @@ public class PaymentMethods extends Customer {
         if (balance < withdraw) {
             System.out.println("Withdraw  amount is  less then balance");
             // System.exit(0);
-        }else {
+        } else {
             System.out.println("New balance is " + balance);
 
         }
@@ -195,10 +203,25 @@ public class PaymentMethods extends Customer {
     }
 
 
-    public void currentBalance(){
+    public void currentBalance() {
 
-        System.out.println( " Current Balance is " + balance);
+        System.out.println(" Current Balance is " + balance);
 
+    }
+
+    @Override
+    public void gas(double gasWithdraw) {
+
+        balance -= gasWithdraw;
+
+        if (balance < gasWithdraw) {
+            System.out.println("Transfer  amount is  less then balance");
+            // System.exit(0);
+        } else {
+            System.out.println("New balance is " + balance);
+
+
+        }
     }
 
     @Override
