@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b0b4b039-11d3-43cf-ad0a-aee2303031f4" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/TransferMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TransferMoney.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentTransactionsObjects.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PaymentTransactionsObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PaymentTransactionsObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accessModifiers/src/Crime.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accessModifiers/src/Crime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accessModifiers/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accessModifiers/src/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accessModifiers/src/Gun.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accessModifiers/src/Gun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../accessModifiers/src/Police.java" beforeDir="false" afterPath="$PROJECT_DIR$/../accessModifiers/src/Police.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

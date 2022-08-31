@@ -125,7 +125,7 @@ public class PaymentMethods extends Customer {
             System.out.println();
             System.out.println(username + " Please Select an Option");
             System.out.println();
-            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money");
+            System.out.println("1 - Deposit Money " + " 2 - Withdraw Money " + " 3 - Zelle " + " 4 - Exit");
 
             int menuScanner = scanner.nextInt();
 
@@ -133,13 +133,19 @@ public class PaymentMethods extends Customer {
 
                 System.out.println("Please Enter the Dollar Amount");
 
-                double dollarScanner = scanner.nextDouble();
+                double depositScanner = scanner.nextDouble();
 
-                depositMoney(dollarScanner);
+                depositMoney(depositScanner);
 
             } else if (menuScanner == 2) {
                 System.out.println("2 selected");
             } else if (menuScanner == 3) {
+
+                double depositScanner = scanner.nextDouble();
+                withdrawMoney(depositScanner);
+
+
+            } else if (menuScanner == 4) {
                 return;
             }
         }
