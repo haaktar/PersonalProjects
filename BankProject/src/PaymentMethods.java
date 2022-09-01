@@ -1,4 +1,5 @@
 import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
 
 public class PaymentMethods extends Customer {
 
@@ -167,6 +168,8 @@ public class PaymentMethods extends Customer {
                 return;
 
 
+            } else if (menuScanner == 6) {
+                loanRequest();
             }
         }
     }
@@ -231,4 +234,54 @@ public class PaymentMethods extends Customer {
     }
 
 
+    @Override
+    public void loanRequest() {
+
+        for (; ; ) {
+            System.out.println(" Do you agree to check your credit score");
+
+            Scanner loanScanner = new Scanner(System.in);
+
+            String loanScannerAnswer = loanScanner.next();
+
+
+            if (loanScannerAnswer.equalsIgnoreCase("yes")) {
+
+                System.out.println(" Please tight up while we are checking your score");
+
+                System.out.println();
+                System.out.print("*");
+                sleep();
+                System.out.print("*");
+                sleep();
+                System.out.print("*");
+                sleep();
+                System.out.print("*");
+
+                System.out.println();
+
+                sleep();
+                if (balance >= 10_000) {
+
+                    System.out.println();
+                    System.out.println("Congrats! Your Loan Is Approved!");
+                } else if (balance < 10_000) {
+
+                    System.out.println();
+                    System.out.println("Your Request Denied.");
+
+                    return;
+                }
+
+            } else if (loanScannerAnswer.equalsIgnoreCase("no")) {
+
+                System.out.println("You are redirecting to Menu");
+
+                return;
+            } else {
+                System.out.println("Wrong Entry");
+
+            }
+        }
+    }
 }
